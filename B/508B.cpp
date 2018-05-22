@@ -15,36 +15,42 @@ int tell_digit(int n)
 
 int main()
 {
-    cout<<"7/1 = "<<7/1<<endl;
-    int n;
+    long long int n;
     cin>>n;
     // 100000
     //  99999
-    int arr[5] = {}, index, size = 0;
+    int arr[100000] = {}, index = -1, size = 0, value = 0;
     bool bo_ol = false;
-    for(int i = 10000; i >= 1; i = i/10)
+    while(n != 0)
     {
-        int digit = tell_digit(i);
-        if(n % i)
+        int digit = tell_digit(n);
+        if(digit > size)
         {
-            if(digit > size)
-                size = digit;
-            arr[digit - 1] = n/i;
-            n %= i;
-            if(!(arr[digit] % 2) && bo_ol)
+            size = digit;
+        }
+        arr[size - digit] = n%10;
+        n /= 10;
+    }
+    // sort(arr, arr + size, [](int x, int y){return x>y?x:y;});
+    for(int i = 0; i < size; i++)
+    {
+        if(arr[i] % 2 == 0)
+        {
+            if(bo_ol && arr[i] < arr[0])
+                index = i;
+            if(index == -1)
             {
+                index = i;
                 bo_ol = true;
-                index = digit;
             }
         }
-        cout<<"n is -> "<<n<<"--------"<<"i is - "<<i<<"////"<<digit - 1<<" (digit - 1)'s value is - "<<arr[digit - 1]<<"\n";
     }
     if(!bo_ol)
         cout<<"-1";
     else
     {
         swap(arr[index], arr[0]);
-        for(int i = size; i >= 0; i++)
+        for(int i = size - 1; i >= 0; i--)
         {
             cout<<arr[i];
         }
