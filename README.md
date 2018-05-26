@@ -23,3 +23,21 @@
 ### day - 5 (22/05/2018)
 * 447B
 * 208A
+
+### day - 6 (23/05/2018)
+* 507B (--pending--)
+
+### day - 7 (24/05/2018)
+* 507B (==done==) {finally...}
+* 454B (--pending--) {spent quiet some time...I might as well giveup :'-( }
+
+
+### day - 8 (25/05/2018)
+* 454B  (==done==) {there's stil hope...YES!!!}
+* 450B
+* 265B
+*  69A
+* 337A {pheewww, I was on a roll today....CHEERS!!}
+#### PS-> in repo there is a wrong name of commit it should be 23/05/2018 to "25"/05/2018 ---too tired to amend that....(aah why am I such a lazy bum??!!)
+
+
