@@ -40,4 +40,5 @@
 * 337A {pheewww, I was on a roll today....CHEERS!!}
 #### PS-> in repo there is a wrong name of commit it should be 23/05/2018 to "25"/05/2018 ---too tired to amend that....(aah why am I such a lazy bum??!!)
 
-
+### day - _ (30/05/2018 - )
+* doing some practice on hackerrank..
