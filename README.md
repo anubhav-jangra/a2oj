@@ -42,3 +42,6 @@
 
 ### day - _ (30/05/2018 - )
 * doing some practice on hackerrank..
+
+### day - 9 (03/06/2018)
+* 489C (==my first div C question Yipiiee.... ;) ==)
